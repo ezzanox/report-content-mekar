@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>KOPERASI KARYAWAN PT GUDANG GARAM, Tbk " MEKAR "</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" href="assets/bootstrap.min.css">
+	<link rel="stylesheet" href="https://koperasidev.mekargg.co.id/assets/bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://koperasidev.mekargg.co.id/assets/bower_components/Ionicons/css/ionicons.min.css">
+	<!-- <link rel="stylesheet" href="<s?php echo base_url('assets/dist/css/AdminLTE.min.css');?>">	 -->
+	<link rel="stylesheet" href="assets/dataTables.bootstrap.min.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+	<!-- <link rel="stylesheet" href="assets/tailwind.css"> -->
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"> -->
+	<!--  css  -->
+	<style>
+		.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, 
+		.table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td,
+		tr  {			
+			padding:3px;			
+			font-size:10px;
+			border:0.5 solid black;
+		}
+		.table>thead>tr>th {	
+			text-align:center;
+			vertical-align:top;
+			font-weight:bold;
+		}
+		
+		.table>tbody>tr>td {
+			text-align:justify;
+		}
+		p {
+			margin:0px;
+		}
+	</style>
+	
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		// Shared ID
+		gtag('config', 'UA-118965717-3');
+		// Bootstrap ID
+		gtag('config', 'UA-118965717-5');
+    </script>
+  
+
+    </head>
+<!--<body onload="window.print();" onafterprint="window.close();">-->
+<body>
+	<div class="wrapper">
+				<!--<section class="invoice" style="height:auto;margin:10px;">-->
+		<!-- isi --->
+				<style type="text/css">
+			@media print {
+				@page {}
+
+			}
+
+			.table-bordered>thead>tr>th,
+			.table-bordered,
+			.table-bordered>tbody>tr>td,
+			.table-bordered>tfoot>tr>th,
+			.table>tbody>tr>td,
+			.table>thead>tr>th,
+			.table>tfoot>tr>th,
+			table.dataTable td,
+			table.dataTable th,
+			th,
+			td {
+				line-height: normal;
+				font-size: 8pt;
+				font-color: black;
+				font-family: Arial, Helvetica, sans-serif;
+				text-transform: capitalize;
+			}
+
+			a,
+			label {
+				font-size: 10pt;
+			}
+		</style>
+		<div id="bodybox" class="box" style="min-width:250px;">
+			<div class="row" style="margin:0px;min-width:1000px;">
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="padding:0px;margin:0px;">
+					<img src="https://koperasidev.mekargg.co.id/assets/img/logo-koperasi.png" class="responsive pull-right" width="50%" style="text-align:right;padding:0px;margin:5px;vertical-align:middle;">
+				</div>
+				<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="">
+					<p style="font-size:12px;font-weight:bold;text-align: center;">Koperasi Karyawan PT. Gudang Garam, Tbk Kediri</p>
+					<p style="font-size:18px;font-weight:bold;text-align: center;">"KOPKAR MEKAR"</p>
+					<p style="font-size:12px;font-weight:bold;text-align: center;">Jl. Mataram 180 Karangrejo Ngasem Kediri Jawa Timur</p>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					<p style="font-size:18px;font-weight:bold;" id="judul"></p>
+					<p style="font-size:18px;font-weight:bold;">
+						<label id="keterangan" class="control-label col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin:0px;padding:0px;"></label>
+					</p>
+				</div>
+			</div>
+			<!--
+	<div class="row noPrint" style="margin-top:50px;">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="">
+			<button onclick="window.print();" class=""  style="font-size:12pt;margin-left:10px;min-width:40px;min-height:40px;"><i class="fa fa-print"></i>
+			<button id="exportExcel" class="dt-button buttons-excel buttons-html5" style="font-size:12pt;margin-left:10px;min-width:40px;min-height:40px;"><i class="fa fa-file-excel-o"></i>
+			
+			<!--<button id="btnexportExcel" name="btnexportExcel" class=""  style="font-size:12pt;margin-left:10px;min-width:40px;min-height:40px;"><i class="fa fa-file-excel-o"></i>->
+		</div>	
+	</div>-->
+			<br>
+			<hr style="border:1px solid #1a0303;">
+
+			<div class="table-responsive">
+				<table id="tablelaporanschedulesecurity" class="table row-border compact stripe" style="width:100%;">
+					<thead>
+						<tr>
+							<th class="text-left ">No</th>
+							<th class="text-left">ID. No.</th>
+							<th class="text-left">Nama</th>
+							<th class="text-left">12 jam</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+					</tbody>
+					<tfoot>
+						<tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+						</tr>
+					</tfoot>
+				</table>
+				<!-- <div id="imgloading">
+			<center>
+				<div class="loader"></div>
+				<font style="color:black;font-size:12pt;font-weight:bold;">Mohon tunggu loading data...!!</font>
+			</center>
+		</div> -->
+			</div>
+            <div class="px-5">
+
+			<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin:0px;padding:0px;">
+				<label>Kediri,&nbsp; 2022/12/23</label>
+			</div>
+
+			<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin:0px;">
+				<label class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3" style="margin:0px;padding:0px;">Dikerjakan Oleh</label>
+				<a id="kaurket" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3" style="margin:0px;padding:0px;"></a>
+				<a id="kasiket" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3" style="margin:0px;padding:0px;"></a>
+				<a id="kabagket" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3" style="margin:0px;padding:0px;"></a>
+			</div>
+			<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin:0px;margin-top:100px;">
+				<label id="" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3" style="margin:0px;padding:0px;text-transform: capitalize;"><u>Developer 07</u></label>
+				<a id="kaurnama" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3" style="margin:0px;padding:0px;text-transform:capitalize;text-decoration: underline;"></a>
+				<a id="kasinama" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3" style="margin:0px;padding:0px;text-transform:capitalize;text-decoration: underline;"></a>
+				<a id="kabagnama" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3" style="margin:0px;padding:0px;text-transform:capitalize;text-decoration: underline;"></a>
+			</div>
+			<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin:0px;margin-top:0px;">
+				<label id="" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3" style="margin:0px;padding:0px;text-transform: capitalize;"></label>
+				<a id="kaurjabatan" name="kaurjabatan" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3" style="margin:0px;padding:0px;text-transform: capitalize;"></a>
+				<a id="kasijabatan" name="kasijabatan" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3" style="margin:0px;padding:0px;text-transform: capitalize;"></a>
+				<a id="kabagjabatan" name="kabagjabatan" class="control-label col-lg-3 col-md-3 col-sm-3 col-xs-3" style="margin:0px;padding:0px;text-transform: capitalize;"></a>
+			</div>
+        </div>
+
+		</div>	</div>
+	
+
+        <div class="bg-red-500 p-5 flex">asd</div>
+
+	<script src="assets/jquery.min.js"></script>
+	<script src="assets/datatables.min.js"></script>
+	<script src="assets/dataTables.bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready( function () {
+    $('#tablelaporanschedulesecurity').DataTable({
+		//scrollY			: false,
+				//scrollX			: false,
+				//scrollCollapse	: false,
+				paging: false,
+				searching: false,
+				ordering: false,
+				orderable: false,
+				//retrieve		: false,
+				//destroy  		: false,
+				autoWidth: false,
+				info: false,
+				/*
+				columnDefs		: [
+									{ "visible": true, "targets": [6] }
+								],
+				*/
+				/*order			: [[ 2, 'asc' ]],*/
+				displayLength: 25,
+				dom: 'Bfrtip',
+	});
+} );
+    </script>
+</body>
+</html>
